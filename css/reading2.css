@@ -1,0 +1,157 @@
+/*Library Class Styling below*/
+#libraryContainer {
+  height: 100%;
+  /*background-image: url("../walnut.jpg");
+  background-size: cover;*/
+}
+
+.books {
+  margin-top: 5%;
+  margin-bottom: .78%;
+  box-shadow: inset;
+  flex-direction: row;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+/*Book Class Styling below*/
+
+.book {
+  border: 2px inset brown;
+  width: 29%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 2.4%;
+  flex-shrink: 0;
+  background-color: aqua;
+  box-shadow: 5px 5px 20px #333;
+}
+
+.book:last-child{
+  /*margin-right: 5%;*/
+}
+
+.book:first-child{
+  margin-left: 0;
+}
+
+.book img { vertical-align: middle; }
+
+.book img {
+  height: 100%;
+  width: 100%;
+}
+
+.book:after {
+  width: 5%;
+  left: 100%;
+  background-color: #EFEFEF;
+  box-shadow: inset 0px 0px 5px #aaa;
+  -moz-transform: rotateY(20deg);
+  -webkit-transform: perspective(100) rotateY(20deg);
+}
+
+.book:before {
+  width: 100%;
+  left: 7.5%;
+  background-color: #5a2d18;
+  box-shadow: 5px 5px 20px #333;
+}
+
+.book:before,
+.book:after {
+  position: absolute;
+  top: 2%;
+  height: 96%;
+  content: ' ';
+  z-index: -1;
+}
+
+.book img {
+  position: relative;
+  max-width: 100%;
+}
+
+.book {
+  position: relative;
+  -moz-perspective: 100px;
+  -moz-transform: rotateY(-3deg);
+  -webkit-transform: perspective(100) rotateY(-3deg);
+  outline: 1px solid transparent; 
+  box-shadow: none;
+}
+
+.books {
+  -moz-perspective: 100px;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Text Class Styling Below*/
+.text-container {
+  max-height: 85vh;
+  margin: 10vh 0;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+} 
+
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.text {
+  font-family: minion-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  font-size: 42pt;
+}
+
+.title {
+  font-family: minion-pro-display, serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+  font-size: 64pt;
+}
+
+.red-highlight {
+  color: red;
+}
+
+.myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+.myBar {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: limegreen;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+  display: contents;
+}
+
+
